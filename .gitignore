@@ -1,0 +1,10 @@
+# Arquivos e pastas do Windows
+desktop.ini
+Thumbs.db
+
+# Pastas do Google Drive
+*.tmp
+~$*
+
+# Pasta de configuração do sistema
+.DS_Store
