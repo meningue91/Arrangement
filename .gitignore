@@ -8,3 +8,4 @@ Thumbs.db
 
 # Pasta de configuração do sistema
 .DS_Store
+.Rproj.user
