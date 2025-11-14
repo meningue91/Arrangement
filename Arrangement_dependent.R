@@ -29,7 +29,9 @@ rm(list = ls())
 
 # Notebook
 
-setwd("C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Doutorado\\Tese\\Artigo I\\Final\\Dados\\PNAE")
+setwd("G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE")
+
+
 
 
 # Base de dados de 2011
@@ -315,7 +317,7 @@ pnae_11 <- select(pnae_11, `Código IBGE`, `Entidade Executora`, ANO, `Valor Tra
 # Salvando a base mergeada
 
 
-save(pnae_11, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_11.RData")
+save(pnae_11, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_11.RData")
 
 
 
@@ -560,7 +562,7 @@ pnae_12 <- select(pnae_12, `Código IBGE`, `Entidade Executora`, ANO, `Valor Tra
 
 # Salvando a base mergeada
 
-save(pnae_12, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_12.RData")
+save(pnae_12, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_12.RData")
 
 
 # Salvando a base mergeada
@@ -596,7 +598,7 @@ pnae_13 <- pnae_13 %>%
 
 pnae_13 <- pnae_13[,-2]
 
-save(pnae_13, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_13.RData")
+save(pnae_13, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_13.RData")
 
 
 
@@ -628,7 +630,7 @@ pnae_14 <- pnae_14 %>%
 
 pnae_14 <- pnae_14[,-2]
 
-save(pnae_14, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_14.RData")
+save(pnae_14, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_14.RData")
 
 # Base 2015
 
@@ -658,7 +660,7 @@ pnae_15 <- pnae_15 %>%
 
 pnae_15 <- pnae_15[,-2]
 
-save(pnae_15, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_15.RData")
+save(pnae_15, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_15.RData")
 
 # Base 2016
 
@@ -688,7 +690,7 @@ pnae_16 <- pnae_16 %>%
 
 pnae_16 <- pnae_16[,-2]
 
-save(pnae_16, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_16.RData")
+save(pnae_16, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_16.RData")
 
 # Base 2017
 
@@ -718,7 +720,7 @@ pnae_17 <- pnae_17 %>%
 
 pnae_17 <- pnae_17[,-2]
 
-save(pnae_17, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_17.RData")
+save(pnae_17, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_17.RData")
 
 # Base 2018
 
@@ -749,7 +751,7 @@ pnae_18 <- pnae_18[,-3]
 pnae_18 <- pnae_18 %>%
   mutate(perc_af = perc_af*0.01)
 
-save(pnae_18, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_18.RData")
+save(pnae_18, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_18.RData")
 
 # Base 2019
 
@@ -780,7 +782,7 @@ pnae_19 <- pnae_19[,-3]
 pnae_19 <- pnae_19 %>%
   mutate(perc_af = perc_af*0.01)
 
-save(pnae_19, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\pnae_19.RData")
+save(pnae_19, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\pnae_19.RData")
 
 # Empilhando as bases
 
@@ -788,4 +790,4 @@ pnae <- rbind(pnae_11, pnae_12, pnae_13, pnae_14, pnae_15, pnae_16, pnae_17, pna
 
 pnae$perc_af <- ifelse(pnae$perc_af>1, NA, pnae$perc_af)
 
-save(pnae, file = "C:\\Users\\jp-08\\OneDrive\\Documentos\\Academia\\Artigos\\PNAE\\Teste\\df_key.RData")
+save(pnae, file = "G:\\.shortcut-targets-by-id\\1QQs16cWoX-d9bE2L-y_-nmNvw3Bt0yuQ\\Prep PNAE Agriculture\\Data\\PNAE\\df_key.RData")
